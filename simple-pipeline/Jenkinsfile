@@ -26,7 +26,8 @@ pipeline {
         // TODO: ADD A STAGE THAT SAYS HELLO
 
 	stage('stage 2') {
-		steps {
+	
+	steps {
 			sh ' echo hello form stage 2!'
 			}
 		}
@@ -38,4 +39,13 @@ pipeline {
 								} 	
 				} 
 			}
+	stage('stage 3') {
+            steps {
+                sh 'echo hello from stage 3!. This is the last stage...'
+            }
+        }
+
+    }
 }
+
+
